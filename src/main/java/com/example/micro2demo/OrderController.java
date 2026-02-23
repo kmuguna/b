@@ -20,7 +20,7 @@ public class OrderController {
     }
     @GetMapping("/{id}")
     public Order getOrder(@PathVariable int id ){
-        String url = "https://ty-uxz1.onrender.com/users/"+id;
+        String url = "https://y-1-yo49.onrender.com/users/"+id;
         User u = resTemplate.getForObject(url, User.class);
         return new Order(id,u.getName());
     }
@@ -42,4 +42,5 @@ public class OrderController {
         }
     }
 }
+
 
